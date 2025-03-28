@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>"Teddy"</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/85872af545.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container header">
+        <nav>
+            <img src="Images/teddylogo2.png" class="logo">
+             <ul>
+                <li><a href="#showreel">Showreel</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+             </ul>
+        </nav>
+        <div class="header-text">
+            <p>Video Game Developer</p>
+            <h1>Hi, I'm <span>Teddy</span><br>And I'm ready<br>To make <span>games</span></h1>
+        </div>
+    </div>
+</div>
+<!-------------showreel------------------->
+<div id="showreel">
+    <div class="container showreel">
+        <div class="video">
+            <video controls>
+                <source src="Videos/Showreel.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+<!-------------about------------------->
+<dive id="about">
+    <div class="container about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Me2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hey! I'm Teddy. I love dogs, TTRPGs, and video games. I'm a passionate video game developer and programmer with a strong foundation in Unity and C#.<br>
+                    After completing a two year course by IAC specializing in Unity, I've been busy creating projects and participating in Game Jams to hone my skills
+                    to become better at creating an immersive experiance through code and design.<br>
+                    I love tackling challenges, optimizing gameplay mechanics, and bringing ideas to life via interactive storytelling. 
+                    If you want a overly polite and well meaning nerd on your team that will give a project his all, I'm your man!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Unity Development</span><br>Video game development with Unity</li>
+                        <li><span>Shader</span><br>Creating Shaders in Unity and usage of Shader Graph</li>
+                        <li><span>3D Computer Graphics</span><br>Making 3D assets via Blender or 3DMax</li>
+                        <li><span>Coding</span><br>Knowledge in C,C++,C#,Java,JavaScript,HTML,CSS Coding languages</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025</span><br>Brackeys Game Jam programmer</li>
+                        <li><span>2024</span><br>Yogscast Game Jam programmer</li>
+                        <li><span>2024</span><br>Personal teacher for Unity, helped student achieve a perfect score</li>
+                        <li><span>2023</span><br>Lead programmer at Gun.Smoke Remake group project</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2024</span><br>IAC Israeli Animation College Video Game Development course</li>
+                        <li><span>2019-2021</span><br>Ariel University, Computer Science studies</li>
+                        <li><span>2017</span><br>Sela College, Android Application Developer course</li>
+                        <li><span>2013</span><br>High school graduate, Hof HaCarmel Joint School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</dive>
+<!-------------portfolio------------------->
+<div id="portfolio">
+    <div class="container portfolio">
+        <h1 class="sub-title portfolio">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="Images/RingRunner.png">
+                <div class="layer">
+                    <h3>Ring Runner</h3>
+                    <p>An endless runner game project in which we made our own spaceship using 3ds Max. Although it seems the space ship is flying around the ring,
+                        in truth, in Unity it is the world which revolves around the player, creating the illusion of motion.
+                    </p>
+                    <div class="links">
+                        <a href="https://github.com/grossteddy/EndlessRunnerProject" ><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/Gun.Smoke.png">
+                <div class="layer">
+                    <h3>Gun.Smoke Remake</h3>
+                    <p>A group project that had us, a group of 4 people, recreate an old game. In this project I was the lead programmer and I made the enemy A.I,
+                        code for destructible objects, dynamite that explodes, and the code for both enemies and player to throw said dynamite towards their target in an arc.
+                    </p>
+                    <div class="links">
+                        <a href="https://github.com/IACTeam/IAC_GunSmokeRemake"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/Project-Commando.png">
+                <div class="layer">
+                    <h3>Project Commando</h3>
+                    <p>A work in progress of making a stealth tactics game like the old Commando's game. 
+                        In this project the main hurdles were making a vision cone for the enemy that shows his line of sight. 
+                        In said project I also made an enemy patrol system that goes over the enemies actions and does them in order.
+                    </p>
+                    <div class="links">
+                        <a href="https://github.com/grossteddy/Project-Commando"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/BloodyMess.png">
+                <div class="layer">
+                    <h3>Bloody Mess</h3>
+                    <p>A game made for the Brackeys Game Jam in under a week with a group of 4 people. In this game you play a janitor trying to find and save his apprentice
+                        during a zombie apocalypse. I was a programmer, and I made the enemy movment, A.I, and implemented the animations from the sprites given to me by the artist. 
+                    </p>
+                    <div class="links">
+                        <a href="https://github.com/freddynewton/Brackeys-Game-Jam-2025"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://freddynewton.itch.io/bloody-mess-with-broomstick-barry"><i class="fa-brands fa-itch-io"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------contact------------------->
+
+<div id="contact">
+    <div class="container contact">
+        <div class="row">
+            <div class="contact-main">
+                <h1 class="sub-title">Contact Information</h1>
+                <p><i class="fa-solid fa-envelope"></i> teddy.kidi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (+972) 54-318-2065</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/teddy-grossman-16656b223/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://direteddy.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+                    <a href="https://github.com/grossteddy"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="CV/Teddy CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>

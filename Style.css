@@ -1,0 +1,373 @@
+﻿@font-face {
+    font-family: 'Vipnagorgialla';
+    src: url(fonts/Vipnagorgialla/Vipnagorgialla\ Bd.otf);
+}
+
+@font-face {
+    font-family: 'toxigenesis';
+    src: url(fonts/toxigenesis/toxigenesis\ bd.otf);
+}
+
+@font-face {
+    font-family: 'BruceForever';
+    src: url(fonts/BruceForever/Bruce\ Forever.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background: #252A34;
+    color: #EAEAEA;
+}
+#header{
+
+    Background-image: url(Images/Background1.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 5%;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    scroll-snap-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 300px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 25px;
+}
+
+nav ul li a{
+    color: #00ccff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    font-family: 'Vipnagorgialla', sans-serif;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FF2E63;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    color: #FF2E63;
+    margin-top: 20%;
+    font-size: 30px;
+    font-family: 'Vipnagorgialla', sans-serif;
+}
+
+.header-text p{
+    font-family: 'Vipnagorgialla', sans-serif;
+}
+
+.header-text h1{
+    font-style: italic;
+    color: #08D9D6;
+   font-size: 60px;
+   margin-top: 20px;
+   font-family: 'toxigenesis', sans-serif; 
+}
+
+.header-text h1 span{
+    color: #FF2E63;
+    font-family: 'Vipnagorgialla', sans-serif;
+}
+
+/* -----------------showreel-------------*/
+
+video{
+    display: block;
+    margin:0 auto;
+}
+
+.container.showreel{
+    background: linear-gradient(454deg, #ff2e2e, #00ccff)
+}
+
+/* -----------------about-------------*/
+
+.container.about{
+    background: linear-gradient(454deg, #00ccff, #252A34)
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+
+}
+
+.about-col-2 p{
+    font-size: 20px;
+    margin-right: 25%;
+    font-family: 'toxigenesis', sans-serif;
+}
+
+.sub-title{
+    margin-bottom: 5%;
+    font-size: 70px;
+    font-weight: 600;
+    color: #ff2e2e;
+    font-family: 'BruceForever', sans-serif;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 40px 0 40px;
+}
+
+.tab-titles p{
+    margin-right: 50px;
+    font-family: 'toxigenesis', sans-serif;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff2e2e;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 80%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-family: 'toxigenesis', sans-serif;
+}
+
+.tab-contents ul li span{
+    color:#ff2e2e;
+    font-size: 22px;
+    font-family: 'toxigenesis', sans-serif;
+}
+
+.tab-contents{
+    display: none;
+    font-size: 20px;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* -----------------portfolio-------------*/
+
+.sub-title.portfolio{
+    text-align: center;
+    color: #00ccff;
+}
+
+.container.portfolio{
+    background: linear-gradient(454deg, #252A34, #ff2e2e)
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #08D9D6);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 1000;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ff2e2e;
+    font-family: 'toxigenesis', sans-serif;
+}
+
+.layer p{
+    font-size: 15px;
+    font-family: 'toxigenesis', sans-serif;
+}
+
+.links a{
+    margin-top: 20px;
+    color: #ff2e2e;
+    text-decoration: none;
+    font-size: 50px;
+    line-height: 60px;
+    display: inline-block;
+    
+}
+
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff2e2e;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #EAEAEA;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff2e2e;
+}
+/* -----------------contact-------------*/
+
+.container.contact{
+    background: linear-gradient(454deg, #00ccff, #252A34)
+}
+
+.contact-main{
+    display: block;
+    margin: auto;
+    flex-basis: auto;
+    
+}
+
+.contact-main p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    flex-basis: auto;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'toxigenesis', sans-serif;
+}
+
+.contact-main p i{
+    color: #ff2e2e;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.social-icons{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons a{ 
+    text-decoration: none;
+    width: 150px;
+    font-size: 80px;
+    color: #EAEAEA;
+    display: inline-block;
+    
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff2e2e;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    font-size: 30px;
+    background: #ff2e2e;
+    display: flex;
+    align-items: center;
+    font-family: 'toxigenesis', sans-serif;
+}
+
+/* -----------------css for small screen-------------*/
