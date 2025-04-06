@@ -89,6 +89,7 @@ nav ul li a:hover::after{
 .header-text{
     color: #FF2E63;
     margin-top: 17%;
+    padding: 10px;
     font-size: 30px;
     font-family: 'Vipnagorgialla', sans-serif;
 }
