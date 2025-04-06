@@ -88,7 +88,7 @@ nav ul li a:hover::after{
 
 .header-text{
     color: #FF2E63;
-    margin-top: 20%;
+    margin-top: 17%;
     font-size: 30px;
     font-family: 'Vipnagorgialla', sans-serif;
 }
@@ -100,9 +100,9 @@ nav ul li a:hover::after{
 .header-text h1{
     font-style: italic;
     color: #08D9D6;
-   font-size: 60px;
-   margin-top: 20px;
-   font-family: 'toxigenesis', sans-serif; 
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: 'toxigenesis', sans-serif; 
 }
 
 .header-text h1 span{
